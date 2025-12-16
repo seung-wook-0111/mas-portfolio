@@ -17,7 +17,7 @@ function headerCode(targetSection) {
 function footerNavbarCode(targetSection) {
     return `
     <div class="navbar-mobile hide-in-pc" id="navbar">
-        <a class="logo innerlink" href="index.html#works"><img src="common-assets/logowhite.png"></a>
+        <a class="logo innerlink" href="index.html#${targetSection}"><img src="common-assets/logowhite.png"></a>
         <nav class="nav-items">
             <ul>
                 <li><a class="innerlink${targetSection == "featured" ? " highlighted" : ""}" href="index.html#featured">F</a></li>
