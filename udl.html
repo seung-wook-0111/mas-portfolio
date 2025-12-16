@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDL Course Material Modification System - Seung Wook Hong Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="subpage.js" as="script">
+    <link rel="icon" type="image/png" sizes="32x32" href="common-assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="common-assets/apple-favicon.png">
+</head>
+
+<body>
+    <div id="header-r"></div>
+    <main>
+        <div class="subpage">
+            <div class="subpage-body">
+                <div class="subpage-section">
+                    <h1 class="subpage-element">UDL Course Material Modification System</h1>
+                    <p class="subtext">Undergraduate Research at Georgia Tech CoWell Lab</p>
+                    <div class="tags">
+                        <div class="tag filled">Programming</div>
+                        <div class="tag filled">UI Design</div>
+                        <div class="tag filled">Prompt Engineering</div>
+                        <div class="tag">HTML/CSS</div>
+                        <div class="tag">JS</div>
+                    </div>
+                    <div class="overview">
+                        <div class="overview-entry">
+                            <p class="overview-title">MY ROLE</p>
+                            <p class="overview-content">Implementation</p>
+                            <p class="overview-explanation">Interface Design & Programming the Artifact</p>
+                            <p class="overview-content">Literature Review</p>
+                            <p class="overview-explanation">Organized a Guideline Database</p>
+                        </div>
+                        <div class="overview-entry">
+                            <p class="overview-title">TEAM</p>
+                            <p class="overview-content">1 Research Advisor</p>
+                            <p class="overview-content">1 Doctoral Student</p>
+                            <p class="overview-content">1 Undergraduate Researcher</p>
+                            <p class="overview-explanation">Myself</p>
+                        </div>
+                        <div class="overview-entry">
+                            <p class="overview-title">DURATION</p>
+                            <p class="overview-content">Jan 2025 - May 2025</p>
+                            <p class="overview-content">4 months</p>
+                            <p class="overview-content">9 hrs / week</p>
+                        </div>
+                    </div>
+                    <img src="subpage-assets/udl/main.png" alt="">
+                </div>
+                <div class="subpage-section">
+                    <h2 class="section-ignore">What’s Interesting / Innovative</h2>
+                    <ul>
+                        <li>Structuring UDL and accommodation guidelines into a <strong>database</strong> that an LLM
+                            can reference, enabling more <strong>consistent and concrete recommendations</strong> for
+                            course material adaptation</li>
+                        <li><strong>Improving the reliability</strong> of AI-generated modifications by
+                            <strong>decomposing the task</strong> into smaller, sequential steps
+                        </li>
+                        <li>Designing a <strong>detail-oriented interface</strong> that allows instructors to inspect
+                            how guidelines are applied, selectively apply or remove them, and iteratively refine results
+                            with or without AI assistance</li>
+                        <li>Exploring how instructors negotiate agency with AI systems when modifying
+                            course materials for accessibility</li>
+                    </ul>
+                </div>
+                <div class="subpage-section">
+                    <h2 class="section-ignore">Relevant to: All Groups</h2>
+                    <ul>
+                        <li>Demonstrates experience integrating conversational AI into interactive research prototypes
+                        </li>
+                        <li>Demonstrates the ability to build functional and usable systems with attention to design
+                            quality</li>
+                        <li>Shows the ability to rapidly acquire new technical skills, including JavaScript, within weeks</li>
+                        <li>Demonstrates interest in educational technology, pedagogical tools, and inclusive education,
+                            with a focus on how AI can effectively support learning through scaffolding</li>
+                    </ul>
+                </div>
+                <hr class="section-divider">
+                <div class="subpage-section">
+                    <h2>Introduction</h2>
+                    <p>In Janurary 2025, I joined Professor Jennifer Kim’s research lab at Georgia Tech to explore how
+                        AI can support more inclusive teaching practices in higher education.</p>
+                    <p>Our project focused on developing an LLM-powered system that helps instructors adapt their course
+                        materials for students with diverse learning needs, grounded in Universal Design for Learning
+                        (UDL) principles. UDL is an educational framework that encourages providing multiple ways of
+                        engaging learners, presenting information, and expressing understanding so that all students—
+                        including those who are neurodivergent or have learning disabilities as well as any student—can
+                        access and participate
+                        in learning effectively. The goal of our system was to reduce the burden on instructors while
+                        making classrooms more accessible, flexible, and equitable.</p>
+                </div>
+                <div class="subpage-section background-black">
+                    <h2>Goal</h2>
+                    <p class="strong">Designing an AI-based system that effectively assists instructors in modifying
+                        course materials to be UDL-compliant</p>
+                </div>
+                <div class="subpage-section">
+                    <h2>Literature Review</h2>
+                    <p>First, I reviewed existing research and accommodation guidelines from educational institutions.
+                        The goal was to understand how UDL principles are applied in practice and to build a structured
+                        database that could guide the LLM. The materials were organized into a database containing each
+                        guideline’s category, concrete examples of how it can be applied, and the target neurodivergent
+                        group when specified.</p>
+                    <img src="subpage-assets/udl/database.png" alt="">
+                </div>
+                <div class="subpage-section">
+                    <h2>Initial Design of the System</h2>
+                    <p>The initial system design used a three-column layout: the left panel displayed the original
+                        material, the center showed the applied guidelines, and the right presented the modified
+                        material. This structure allowed users to easily compare differences through highlighted changes
+                        and understand which guideline affected each part of the text.</p>
+                    <img src="subpage-assets/udl/3-column.png" alt="">
+                </div>
+                <div class="subpage-section">
+                    <h2>Three-Step Design to Enhance Recommendation Quality</h2>
+                    <p>The initial guideline recommendations and modifications were inconsistent, and the modified
+                        materials often didn’t meet expectations. To improve quality, I split the task into three
+                        smaller steps:</p>
+                    <ol>
+                        <li>Suggesting UDL guidelines</li>
+                        <li>Breaking the input material into chunks and mapping relevant guidelines to each chunk, and
+                        </li>
+                        <li>Generating modifications for each chunk.</li>
+                    </ol>
+                    <p>Based on this change, I introduced an additional step in the interface that allows users to
+                        select which suggested guidelines they want to apply. This created a two-step user
+                        experience—first reviewing recommendations, then receiving the final modifications—which made
+                        the outputs more predictable and reliable.</p>
+                    <img src="subpage-assets/udl/select.png" alt="">
+                </div>
+                <div class="subpage-section">
+                    <h2>Revising to a Two-Column Design</h2>
+                    <p>Based on feedback, I redesigned the interface using a two-column layout. In the left pane,
+                        users can select or deselect guidelines to apply, and the right pane instantly reflects how
+                        those choices change the course material. This side-by-side structure makes the impact of each
+                        guideline more visible and easier to understand.</p>
+                    <video autoplay muted loop>
+                        <source src="subpage-assets/udl/check.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="subpage-section">
+                    <h2>Chat for Further Revision</h2>
+                    <p>For each modified part, users can refine the content through a chat interface with the LLM.
+                        The system also suggests helpful prompts to guide the conversation. Any changes made through
+                        this chat are automatically applied to the modified material, allowing users to fine-tune
+                        results with minimal effort.</p>
+                    <video autoplay muted loop>
+                        <source src="subpage-assets/udl/chat.mp4" type="video/mp4">
+                    </video>
+                    <img src="subpage-assets/udl/chat.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer-r"></div>
+    <script src="subpage.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
