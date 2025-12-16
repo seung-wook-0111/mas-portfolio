@@ -153,7 +153,7 @@ const footerCodeR = `
                     </div>
                 </div>
             </a>
-            <a class="innerlink figrp" href="sleeptube.html">
+            <a class="innerlink prgrp figrp" href="sleeptube.html">
                 <div class="content-item">
                     <img src="home-assets/sleeptube.png" alt="SleepTube">
                     <div class="hover-content">

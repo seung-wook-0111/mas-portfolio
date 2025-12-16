@@ -95,6 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const fButtons = document.querySelectorAll("#featured .filter-btn");
     const fItems = document.querySelectorAll("#featured a.innerlink");
     let fSavedFilter = localStorage.getItem(FSTORAGE_KEY);
+    if(!fSavedFilter) fSavedFilter = "all";
     updateFilterButtons(fButtons, fSavedFilter);
     filterEntries(fSavedFilter, fItems);
     addBtnEventListener(FSTORAGE_KEY, fButtons, fItems);
@@ -102,6 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const oButtons = document.querySelectorAll("#works .filter-btn, #projects .filter-btn");
     const oItems = document.querySelectorAll("#works a.innerlink, #projects a.innerlink");
     let oSavedFilter = localStorage.getItem(OSTORAGE_KEY);
+    if(!oSavedFilter) oSavedFilter = "all";
     updateFilterButtons(oButtons, oSavedFilter);
     filterEntries(oSavedFilter, oItems);
     addBtnEventListener(OSTORAGE_KEY, oButtons, oItems);
